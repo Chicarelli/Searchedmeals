@@ -39,10 +39,12 @@ export const Description = styled.section`
 
   img {
     background-position: center center;
+    background: no-repeat;
     height: 150px;
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 4px;
+    align-self: center;
   }
 
   p {

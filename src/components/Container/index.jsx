@@ -4,29 +4,45 @@ import api from "../../services/api";
 
 import ListItem from "../ListItem";
 
-
-
 function Container() {
   const [list, setList] = useState([]);
+  const [name, setName] = useState("");
+
+  function handleSubmit(e) {  //form verification
+    e.preventDefault();
+    if (name.replace(/\s/, "") === "") {  //if its not empty
+    } else {
+      loadList();
+    }
+  }
 
   async function loadList() {
-    await api.get().then((response) => {
-      setList(response.data.meals);
-      console.log(response.data.meals);
+    await api.get(`/search.php?s=${name}`).then((response) => {
+
+      if(response.data.meals == null) {
+        alert("Não encontrado!")
+      } else {
+        setList(response.data.meals);
+      }
     });
   }
 
   return (
     <>
       <S.Container>
-        <S.Form>
-            <input type="text" placeholder="Type the ingredient" />
-            <button>Search</button>
+        <S.Form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Type the ingredient"
+          />
+          <button type="submit">Search</button>
         </S.Form>
-        <ListItem/>
-        <ListItem/>
-        <ListItem/>
-        <ListItem/>
+        {list.map((ls) => (
+          <ListItem key={ls.idMeal} name={ls.strMeal} category={ls.strCategory} area={ls.strArea} instructions={ls.strInstructions} thumbnail={ls.strMealThumb}/>
+        ))}
       </S.Container>
     </>
   );

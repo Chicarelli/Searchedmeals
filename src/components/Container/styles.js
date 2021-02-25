@@ -43,6 +43,7 @@ export const Form = styled.form`
     padding: 10px;
     transition: 0.3s;
     width: 9%;
+    min-width: max-content;
 
     &:hover {
       opacity: 0.7;
