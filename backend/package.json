@@ -1,0 +1,25 @@
+{
+  "name": "backend-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chicarelli/Teste-Topi.git"
+  },
+  "author": "Rafael Chicarelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chicarelli/Teste-Topi/issues"
+  },
+  "homepage": "https://github.com/Chicarelli/Teste-Topi#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
