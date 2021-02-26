@@ -57,4 +57,8 @@ export const Description = styled.section`
     transition: 2s;
     width: 100%;
   }
+
+  @media screen and (max-width: 900px){
+    flex-direction: column;
+  }
 `;
