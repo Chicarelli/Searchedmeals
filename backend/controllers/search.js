@@ -1,6 +1,11 @@
+const search = require('../models/searchs');
+const cors = require('cors');
+
 module.exports = server => {
-    server.post('/searchs', (req, res) => { 
-        console.log(req.body);
+    server.post('/searchs', cors(), (req, res) => { 
+        const searched = req.body;
+        search(searched);
+
         res.send("Tudo certo")
     });
 }

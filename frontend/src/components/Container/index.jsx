@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import api from "../../services/api";
+import dataBase from '../../services/dataBase';
 
 import ListItem from "../ListItem";
 
@@ -8,9 +9,11 @@ function Container() {
   const [list, setList] = useState([]);
   const [name, setName] = useState("");
 
-  function handleSubmit(e) {  //form verification
+  function handleSubmit(e) {
+    //form verification
     e.preventDefault();
-    if (name.replace(/\s/, "") === "") {  //if its not empty
+    if (name.replace(/\s/, "") === "") {
+      //if its not empty
     } else {
       loadList();
     }
@@ -18,12 +21,18 @@ function Container() {
 
   async function loadList() {
     await api.get(`/search.php?s=${name}`).then((response) => {
-
-      if(response.data.meals == null) {
-        alert("Não encontrado!")
+      if (response.data.meals == null) {
+        alert("Não encontrado!");
       } else {
         setList(response.data.meals);
+        savingSearch();
       }
+    });
+  }
+
+  async function savingSearch() {
+    await dataBase.post('/searchs', {
+      "search" : name
     });
   }
 
@@ -41,7 +50,14 @@ function Container() {
           <button type="submit">Search</button>
         </S.Form>
         {list.map((ls) => (
-          <ListItem key={ls.idMeal} name={ls.strMeal} category={ls.strCategory} area={ls.strArea} instructions={ls.strInstructions} thumbnail={ls.strMealThumb}/>
+          <ListItem
+            key={ls.idMeal}
+            name={ls.strMeal}
+            category={ls.strCategory}
+            area={ls.strArea}
+            instructions={ls.strInstructions}
+            thumbnail={ls.strMealThumb}
+          />
         ))}
       </S.Container>
     </>
