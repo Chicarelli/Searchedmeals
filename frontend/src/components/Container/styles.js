@@ -10,9 +10,8 @@ export const Form = styled.form`
   display: flex;
   height: 100px;
   margin: auto;
-  min-width: 350px;
   padding-top: 15px;
-  width: 50%;
+  width: 70%;
 
   input {
     border: 2px solid red;
@@ -48,5 +47,12 @@ export const Form = styled.form`
     &:hover {
       opacity: 0.7;
     }
+  }
+
+  @media screen and (max-width: 350px){
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    align-items: center;
   }
 `;

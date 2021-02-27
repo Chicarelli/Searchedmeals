@@ -14,4 +14,12 @@ export const Container = styled.nav`
     font-size: 2.4rem;
     letter-spacing: 0.5rem;
   }
+
+  @media screen and (max-width: 530px){
+    h1{
+      letter-spacing: 0px;
+      font-size: 2rem;
+    }
+  }
+
 `;

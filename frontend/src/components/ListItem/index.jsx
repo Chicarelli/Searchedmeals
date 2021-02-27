@@ -1,7 +1,8 @@
 import React from "react";
 import * as S from "./styles";
 
-function ListItem({name, category, area, instructions, thumbnail}) {
+function ListItem({ name, category, area, instructions, thumbnail }) {
+  const newInstructions = instructions.split("\r\n");
   return (
     <>
       <S.Container>
@@ -13,7 +14,14 @@ function ListItem({name, category, area, instructions, thumbnail}) {
         </S.Subtitle>
         <S.Description>
           <img src={thumbnail} alt="" />
-          <p dangerouslySetInnerHTML={{ __html: instructions }}></p>
+          <S.Text>
+          {
+            /* <section dangerouslySetInnerHTML={{ __html: instructions }}></section> */
+            newInstructions.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))
+          }
+          </S.Text>
         </S.Description>
       </S.Container>
     </>
