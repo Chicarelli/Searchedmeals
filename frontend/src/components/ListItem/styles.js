@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   align-items: center;
-  background: rgb(255, 240, 240);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 2px 2px 5px 5px rgba(179, 175, 179, 1);
-  -webkit-box-shadow: 2px 2px 5px 5px rgba(179, 175, 179, 1);
-  -moz-box-shadow: 2px 2px 5px 5px rgba(179, 175, 179, 1);
+  box-shadow: 2px 2px 5px 5px rgba(200, 200, 200, 1);
+  -webkit-box-shadow: 2px 2px 5px 5px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 2px 2px 5px 5px rgba(200, 200, 200, 1);
   display: flex;
   flex-direction: column;
   margin: 30px auto 30px;
@@ -17,6 +17,7 @@ export const Container = styled.section`
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
     margin-top: 10px;
+    text-align: center;
   }
 
   @media screen and (max-width: 1000px){
