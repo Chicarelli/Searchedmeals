@@ -27,3 +27,7 @@ O sistema faz uso de três componentes:
 A aplicação conta com um backend com o objetivo de armazenar os alimentos procurados. No frontend essa rota é chamada após a validação de que o alimento existe na API do Themealsdb, apenas salvando as buscas que obtiveram sucesso. 
 
 O Backend foi criado com o express e também foi utilizado como dependência o axios, para permitir acesso do frontend da aplicação. 
+
+<h2 style="text-align: center">Deploy</h2>
+Front-end: <a href="https://searchedmeals.netlify.app/"> Link do netlify</a>
+
