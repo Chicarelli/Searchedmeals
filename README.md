@@ -9,7 +9,7 @@ O sistema faz uso de três componentes:
 <p style="text-align: justify">Este componente é o cabeçalho da página, contendo apenas o título de nosso sistema. </p>
 
 <h2 style="text-align: center">Container</h2>
-<img style="width: 80%; margin: auto" src="./component-container.png" alt="Imagem do Componente Container">
+<img style="width: 80%; margin: auto" src="component-container.png" alt="Imagem do Componente Container">
 <p style="text-align: justify">Este componente fica responsável pelo resto da aplicação. Nele contem um formulário onde o usuário insere o nome de um alimento e realiza uma busca. O componente Container tem em seu corpo, um outro componente, responsável por renderizar cada item recuperado no banco de dados.  </p>
 
 <h2 style="text-align: center">ListItem</h2>
