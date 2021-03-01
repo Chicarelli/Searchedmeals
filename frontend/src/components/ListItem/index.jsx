@@ -16,7 +16,6 @@ function ListItem({ name, category, area, instructions, thumbnail }) {
           <img src={thumbnail} alt="" />
           <S.Text>
           {
-            /* <section dangerouslySetInnerHTML={{ __html: instructions }}></section> */
             newInstructions.map((item, index) => (
               <p key={index}>{item}</p>
             ))
