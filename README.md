@@ -20,7 +20,7 @@ O sistema faz uso de três componentes:
 <h2 style="text-align: center">SearchedMeals</h2>
 <img style="width: 80%; margin: auto" src="https://github.com/Chicarelli/Searchedmeals/blob/master/searched-meals-full-screen.PNG" alt="Imagem da Aplicação por Completa">
 <p style="text-align: justify">A aplicação possui responsividade, assumindo um layout agradável para todos os tamanhos diferentes de tela, alterando principalmente o comportamento do component ListItem, alterando levemente seu layout: </p>
-<img src="./component-listItem-responsividade.PNG" alt="Imagem do component ListItem Responsivo"/>
+<img src="https://github.com/Chicarelli/Searchedmeals/blob/master/component-listItem-responsividade.PNG" alt="Imagem do component ListItem Responsivo"/>
 
 
 <h2 style="text-align: center">Backend</h2>
