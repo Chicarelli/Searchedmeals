@@ -28,6 +28,5 @@ A aplicação conta com um backend com o objetivo de armazenar os alimentos proc
 
 O Backend foi criado com o express e também foi utilizado como dependência o axios, para permitir acesso do frontend da aplicação. 
 
-<h2 style="text-align: center">Deploy</h2>
-Front-end: <a href="https://searchedmeals.netlify.app/"> Link do netlify</a>
+
 
