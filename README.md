@@ -5,20 +5,20 @@ O desenvolvimento foi realizado utilizando ReactJS como ferramenta, utilizando d
 O sistema faz uso de três componentes:
 
 <h2 style="text-align: center">Header</h2>
-<img style="width: 80%; margin: auto" src="./component-header.PNG" alt="Imagem do Componente Header">
+<img style="width: 80%; margin: auto" src="https://github.com/Chicarelli/Searchedmeals/blob/master/component-header.PNG" alt="Imagem do Componente Header">
 <p style="text-align: justify">Este componente é o cabeçalho da página, contendo apenas o título de nosso sistema. </p>
 
 <h2 style="text-align: center">Container</h2>
-<img style="width: 80%; margin: auto" src="component-container.PNG" alt="Imagem do Componente Container">
+<img style="width: 80%; margin: auto" src="https://github.com/Chicarelli/Searchedmeals/blob/master/component-container.PNG" alt="Imagem do Componente Container">
 <p style="text-align: justify">Este componente fica responsável pelo resto da aplicação. Nele contem um formulário onde o usuário insere o nome de um alimento e realiza uma busca. O componente Container tem em seu corpo, um outro componente, responsável por renderizar cada item recuperado no banco de dados.  </p>
 
 <h2 style="text-align: center">ListItem</h2>
-<img style="width: 80%; margin: auto" src="./component-listItem.PNG" alt="Imagem do Componente ListItem">
+<img style="width: 80%; margin: auto" src="https://github.com/Chicarelli/Searchedmeals/blob/master/component-listItem.PNG" alt="Imagem do Componente ListItem">
 <p style="text-align: justify">Este componente é renderizado à cada item encontrado no banco de dados. As informações contidas nele incluem: Título do alimento, sua categoria, de onde que ele é, sua foto e por fim, as instruções para sua realização.  </p>
 
 
 <h2 style="text-align: center">SearchedMeals</h2>
-<img style="width: 80%; margin: auto" src="./searched-meals-full-screen.PNG" alt="Imagem da Aplicação por Completa">
+<img style="width: 80%; margin: auto" src="https://github.com/Chicarelli/Searchedmeals/blob/master/searched-meals-full-screen.PNG" alt="Imagem da Aplicação por Completa">
 <p style="text-align: justify">A aplicação possui responsividade, assumindo um layout agradável para todos os tamanhos diferentes de tela, alterando principalmente o comportamento do component ListItem, alterando levemente seu layout: </p>
 <img src="./component-listItem-responsividade.PNG" alt="Imagem do component ListItem Responsivo"/>
 
